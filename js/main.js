@@ -110,7 +110,8 @@ function encodeHtmlEntities(text) {
    let rawHtml = document.getElementById('terminalColourPreview').innerHTML;
    let formattedHtml = html_beautify(rawHtml, { indent_size: 2 });
    let rawOutput = document.getElementById('terminalColourPreview').innerHTML;
-   codeOutput.value = `<div class="terminal-content" id="terminalColourPreview">${formattedHtml}</div>`;
+   //codeOutput.value = `<div class="terminal-content" id="terminalColourPreview">${formattedHtml}</div>`;
+   codeOutput.value = `<div class="terminal-content" id="terminalColourPreview">${rawOutput}</div>`;
   }
 
 
