@@ -89,17 +89,12 @@ www-data</code>
 		<p>Copy and paste the code snippet below into your room's task. HTML characters have been escaped (encoded) to prevent render issues.</p>
 
 <textarea disabled id="codeOutput" name="codeOutput">
-<div class="terminal-container">
-    <div class="terminal-content ">
-        <div class="terminal-top">
-            Example Terminal
-        </div>
-        <pre class="terminal-code">
-           <code class="language-shell-session">user@tryhackme$ whoami
-www-data</code>
-        </pre>
-    </div>
-</div>
+<div class="terminal-content" id="terminalColourPreview">
+			<div class="terminal-top" id="terminalTitlePreview">Example Terminal</div>
+			<pre class="terminal-code language-shell-session" tabindex="0"><code class=" language-shell-session" id="codePreview"><span class="token command"><span class="token info punctuation"><span class="token user">user@tryhackme</span></span><span class="token shell-symbol important">$</span> <span class="token bash language-bash"><span class="token function">whoami</span></span></span>
+<span class="token output">www-data</span></code>
+			</pre>
+		</div>
 </textarea>
 
 <button id="copyToClipboardButton">Copy to Clipboard</button>
