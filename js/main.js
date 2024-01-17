@@ -106,8 +106,11 @@ function encodeHtmlEntities(text) {
     // Encode special characters in the outputText
     outputText = encodeHtmlEntities(outputText);
 
-let rawOutput = document.getElementById('terminalColourPreview').innerHTML;
-codeOutput.value = `<div class="terminal-content" id="terminalColourPreview">${rawOutput}</div>`;
+
+   let rawHtml = document.getElementById('terminalColourPreview').innerHTML;
+   let formattedHtml = html_beautify(rawHtml, { indent_size: 2 });
+   let rawOutput = document.getElementById('terminalColourPreview').innerHTML;
+   codeOutput.value = `<div class="terminal-content" id="terminalColourPreview">${formattedHtml}</div>`;
   }
 
 
